@@ -18,3 +18,7 @@ scikit-learn
 tabulate
 gdown
 faiss-gpu
+Cython==0.29.36
+onnx==1.14.0
+onnxoptimizer==0.3.13
+onnxsim==0.4.33

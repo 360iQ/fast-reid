@@ -119,6 +119,8 @@ def export_onnx_model(model, inputs):
                 inputs,
                 f,
                 operator_export_type=OperatorExportTypes.ONNX_ATEN_FALLBACK,
+                input_names=["x"],
+                dynamic_axes={"x": {0: "batch"}}
                 # verbose=True,  # NOTE: uncomment this for debugging
                 # export_params=True,
             )
